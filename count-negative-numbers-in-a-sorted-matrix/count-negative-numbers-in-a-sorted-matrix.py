@@ -1,13 +1,9 @@
 class Solution(object):
     def countNegatives(self, grid):
-        grid_str=str(grid)
-        z=grid_str.count('-')
-        return z
-
-        
-
-
+        grid_str=''.join(str(i) for i in grid)
+        return grid_str.count('-')
         """
         :type grid: List[List[int]]
         :rtype: int
         """
+        
