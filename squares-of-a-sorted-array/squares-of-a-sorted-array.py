@@ -3,7 +3,8 @@ class Solution(object):
         n=[]
         for i in nums:
             n.append(i*i)
-        return sorted(n)
+        n.sort()
+        return n
 
         """
         :type nums: List[int]
