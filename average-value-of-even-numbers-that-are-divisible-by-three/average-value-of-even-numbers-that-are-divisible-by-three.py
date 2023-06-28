@@ -3,7 +3,7 @@ class Solution(object):
         n=[]
         sum=0
         for i in nums:
-            if i%3==0 and i%2==0:
+            if i%6==0:
                 n.append(i)
         for i in n:
             sum+=i
