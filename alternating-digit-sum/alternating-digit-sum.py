@@ -1,16 +1,16 @@
 class Solution(object):
     def alternateDigitSum(self, n):
+        l=[int(i) for i in str(n)]
+        n=[]
+        p=[]
+        for i in range(0,len(l),2):
+            n.append(l[i])
+        for j in range(1,len(l),2):
+            p.append(-l[j])
+        return sum(n+p)
 
-        sol=0
-        sign=1
-        while n>0:
-            
-            sign*=-1
-            sol+=n%10*sign
-            n/=10
-        return sign*sol
+
         """
         :type n: int
         :rtype: int
         """
-        
