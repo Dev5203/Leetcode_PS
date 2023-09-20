@@ -1,7 +1,13 @@
 class Solution(object):
     def sortColors(self, nums):
-        n=nums.sort()
-        return n
+        for i in range(len(nums)):
+            min_val=min(nums[i:])
+            min_ind=nums.index(min_val,i)
+            nums[i],nums[min_ind]=nums[min_ind],nums[i]
+        return nums
+
+
+        
         
         """
 
