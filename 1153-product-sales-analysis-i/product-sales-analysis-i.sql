@@ -2,6 +2,6 @@
 
 SELECT p.product_name,s.year,s.price
 FROM Sales as s
-left join Product as p
+inner join Product as p
 on s.product_id=p.product_id
 order by s.price desc
